@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2BDA68F2A3714AF00DB7317 /* OpenChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA68E2A3714AF00DB7317 /* OpenChatApp.swift */; };
+		F2BDA6912A3714AF00DB7317 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA6902A3714AF00DB7317 /* ContentView.swift */; };
+		F2BDA6932A3714B000DB7317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BDA6922A3714B000DB7317 /* Assets.xcassets */; };
+		F2BDA6972A3714B000DB7317 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BDA6962A3714B000DB7317 /* Preview Assets.xcassets */; };
+		F2BDA6BC2A37156700DB7317 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA6BB2A37156700DB7317 /* ChatMessage.swift */; };
+		F2BDA6BE2A39D71D00DB7317 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA6BD2A39D71D00DB7317 /* DataModel.swift */; };
+		F2BDA6C02A39D76400DB7317 /* LocalaiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA6BF2A39D76400DB7317 /* LocalaiController.swift */; };
+		F2BDA6C32A39DA7F00DB7317 /* ChatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA6C22A39DA7F00DB7317 /* ChatStyle.swift */; };
+		F2BDA6C52A39DB4800DB7317 /* SystemMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA6C42A39DB4800DB7317 /* SystemMessageView.swift */; };
+		F2BDA6C72A39DB5500DB7317 /* UserMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA6C62A39DB5500DB7317 /* UserMessageView.swift */; };
+		F2BDA6CB2A39EB6400DB7317 /* CompletionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA6CA2A39EB6400DB7317 /* CompletionResponse.swift */; };
+		F2BDA6CD2A39EEAA00DB7317 /* TypingAnimationProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA6CC2A39EEAA00DB7317 /* TypingAnimationProgressView.swift */; };
+		F2BDA6CF2A3A2AE900DB7317 /* UserInputBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA6CE2A3A2AE900DB7317 /* UserInputBarView.swift */; };
+		F2BDA6D12A3A366D00DB7317 /* InputMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDA6D02A3A366D00DB7317 /* InputMessage.swift */; };
+		F2F7D3EC2A7ABEDB009308CF /* OllamaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F7D3EB2A7ABEDB009308CF /* OllamaController.swift */; };
+		F2F7D3EE2A7ABEFD009308CF /* OllamaCompletionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F7D3ED2A7ABEFD009308CF /* OllamaCompletionResponse.swift */; };
+		F2F7D3F02A7BCFAF009308CF /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F7D3EF2A7BCFAF009308CF /* Host.swift */; };
+		F2F7D3F22A7BDCB4009308CF /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F7D3F12A7BDCB4009308CF /* ConfigView.swift */; };
+		F2F7D3F52A7BE0BD009308CF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F7D3F42A7BE0BD009308CF /* View.swift */; };
+		F2F7D3FB2A7BFCA1009308CF /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = F2F7D3FA2A7BFCA1009308CF /* OpenAI */; };
+		F2F7D3FD2A7C2A2C009308CF /* OpenaiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F7D3FC2A7C2A2C009308CF /* OpenaiController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2BDA69D2A3714B000DB7317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2BDA6832A3714AF00DB7317 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2BDA68A2A3714AF00DB7317;
+			remoteInfo = OpenChat;
+		};
+		F2BDA6A72A3714B000DB7317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2BDA6832A3714AF00DB7317 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2BDA68A2A3714AF00DB7317;
+			remoteInfo = OpenChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2BDA68B2A3714AF00DB7317 /* OpenChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BDA68E2A3714AF00DB7317 /* OpenChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatApp.swift; sourceTree = "<group>"; };
+		F2BDA6902A3714AF00DB7317 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F2BDA6922A3714B000DB7317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2BDA6942A3714B000DB7317 /* OpenChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenChat.entitlements; sourceTree = "<group>"; };
+		F2BDA6962A3714B000DB7317 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2BDA69C2A3714B000DB7317 /* OpenChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BDA6A62A3714B000DB7317 /* OpenChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BDA6BB2A37156700DB7317 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		F2BDA6BD2A39D71D00DB7317 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		F2BDA6BF2A39D76400DB7317 /* LocalaiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalaiController.swift; sourceTree = "<group>"; };
+		F2BDA6C22A39DA7F00DB7317 /* ChatStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStyle.swift; sourceTree = "<group>"; };
+		F2BDA6C42A39DB4800DB7317 /* SystemMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMessageView.swift; sourceTree = "<group>"; };
+		F2BDA6C62A39DB5500DB7317 /* UserMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessageView.swift; sourceTree = "<group>"; };
+		F2BDA6CA2A39EB6400DB7317 /* CompletionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionResponse.swift; sourceTree = "<group>"; };
+		F2BDA6CC2A39EEAA00DB7317 /* TypingAnimationProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingAnimationProgressView.swift; sourceTree = "<group>"; };
+		F2BDA6CE2A3A2AE900DB7317 /* UserInputBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputBarView.swift; sourceTree = "<group>"; };
+		F2BDA6D02A3A366D00DB7317 /* InputMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMessage.swift; sourceTree = "<group>"; };
+		F2F7D3EB2A7ABEDB009308CF /* OllamaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OllamaController.swift; sourceTree = "<group>"; };
+		F2F7D3ED2A7ABEFD009308CF /* OllamaCompletionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OllamaCompletionResponse.swift; sourceTree = "<group>"; };
+		F2F7D3EF2A7BCFAF009308CF /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		F2F7D3F12A7BDCB4009308CF /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		F2F7D3F42A7BE0BD009308CF /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		F2F7D3FC2A7C2A2C009308CF /* OpenaiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenaiController.swift; sourceTree = "<group>"; };
+		F2F7D4002A7E6255009308CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2BDA6882A3714AF00DB7317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F7D3FB2A7BFCA1009308CF /* OpenAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BDA6992A3714B000DB7317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BDA6A32A3714B000DB7317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2BDA6822A3714AF00DB7317 = {
+			isa = PBXGroup;
+			children = (
+				F2F7D4002A7E6255009308CF /* README.md */,
+				F2BDA68D2A3714AF00DB7317 /* OpenChat */,
+				F2BDA68C2A3714AF00DB7317 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2BDA68C2A3714AF00DB7317 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2BDA68B2A3714AF00DB7317 /* OpenChat.app */,
+				F2BDA69C2A3714B000DB7317 /* OpenChatTests.xctest */,
+				F2BDA6A62A3714B000DB7317 /* OpenChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2BDA68D2A3714AF00DB7317 /* OpenChat */ = {
+			isa = PBXGroup;
+			children = (
+				F2BDA68E2A3714AF00DB7317 /* OpenChatApp.swift */,
+				F2BDA6902A3714AF00DB7317 /* ContentView.swift */,
+				F2F7D3F12A7BDCB4009308CF /* ConfigView.swift */,
+				F2BDA6CE2A3A2AE900DB7317 /* UserInputBarView.swift */,
+				F2F7D3F32A7BE0AE009308CF /* Extensions */,
+				F2F7D3FE2A7CD22F009308CF /* Model API controllers */,
+				F2F7D3FF2A7CD3B9009308CF /* Messages */,
+				F2BDA6C12A39D8E500DB7317 /* Model */,
+				F2BDA6922A3714B000DB7317 /* Assets.xcassets */,
+				F2BDA6942A3714B000DB7317 /* OpenChat.entitlements */,
+				F2BDA6952A3714B000DB7317 /* Preview Content */,
+			);
+			path = OpenChat;
+			sourceTree = "<group>";
+		};
+		F2BDA6952A3714B000DB7317 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F2BDA6962A3714B000DB7317 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2BDA6C12A39D8E500DB7317 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2BDA6C22A39DA7F00DB7317 /* ChatStyle.swift */,
+				F2BDA6D02A3A366D00DB7317 /* InputMessage.swift */,
+				F2BDA6BB2A37156700DB7317 /* ChatMessage.swift */,
+				F2BDA6BD2A39D71D00DB7317 /* DataModel.swift */,
+				F2BDA6CA2A39EB6400DB7317 /* CompletionResponse.swift */,
+				F2F7D3ED2A7ABEFD009308CF /* OllamaCompletionResponse.swift */,
+				F2F7D3EF2A7BCFAF009308CF /* Host.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2F7D3F32A7BE0AE009308CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2F7D3F42A7BE0BD009308CF /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2F7D3FE2A7CD22F009308CF /* Model API controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2BDA6BF2A39D76400DB7317 /* LocalaiController.swift */,
+				F2F7D3EB2A7ABEDB009308CF /* OllamaController.swift */,
+				F2F7D3FC2A7C2A2C009308CF /* OpenaiController.swift */,
+			);
+			path = "Model API controllers";
+			sourceTree = "<group>";
+		};
+		F2F7D3FF2A7CD3B9009308CF /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				F2BDA6CC2A39EEAA00DB7317 /* TypingAnimationProgressView.swift */,
+				F2BDA6C42A39DB4800DB7317 /* SystemMessageView.swift */,
+				F2BDA6C62A39DB5500DB7317 /* UserMessageView.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2BDA68A2A3714AF00DB7317 /* OpenChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2BDA6B02A3714B000DB7317 /* Build configuration list for PBXNativeTarget "OpenChat" */;
+			buildPhases = (
+				F2BDA6872A3714AF00DB7317 /* Sources */,
+				F2BDA6882A3714AF00DB7317 /* Frameworks */,
+				F2BDA6892A3714AF00DB7317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenChat;
+			packageProductDependencies = (
+				F2F7D3FA2A7BFCA1009308CF /* OpenAI */,
+			);
+			productName = OpenChat;
+			productReference = F2BDA68B2A3714AF00DB7317 /* OpenChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2BDA69B2A3714B000DB7317 /* OpenChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2BDA6B32A3714B000DB7317 /* Build configuration list for PBXNativeTarget "OpenChatTests" */;
+			buildPhases = (
+				F2BDA6982A3714B000DB7317 /* Sources */,
+				F2BDA6992A3714B000DB7317 /* Frameworks */,
+				F2BDA69A2A3714B000DB7317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2BDA69E2A3714B000DB7317 /* PBXTargetDependency */,
+			);
+			name = OpenChatTests;
+			productName = OpenChatTests;
+			productReference = F2BDA69C2A3714B000DB7317 /* OpenChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2BDA6A52A3714B000DB7317 /* OpenChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2BDA6B62A3714B000DB7317 /* Build configuration list for PBXNativeTarget "OpenChatUITests" */;
+			buildPhases = (
+				F2BDA6A22A3714B000DB7317 /* Sources */,
+				F2BDA6A32A3714B000DB7317 /* Frameworks */,
+				F2BDA6A42A3714B000DB7317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2BDA6A82A3714B000DB7317 /* PBXTargetDependency */,
+			);
+			name = OpenChatUITests;
+			productName = OpenChatUITests;
+			productReference = F2BDA6A62A3714B000DB7317 /* OpenChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2BDA6832A3714AF00DB7317 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F2BDA68A2A3714AF00DB7317 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					F2BDA69B2A3714B000DB7317 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F2BDA68A2A3714AF00DB7317;
+					};
+					F2BDA6A52A3714B000DB7317 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F2BDA68A2A3714AF00DB7317;
+					};
+				};
+			};
+			buildConfigurationList = F2BDA6862A3714AF00DB7317 /* Build configuration list for PBXProject "OpenChat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2BDA6822A3714AF00DB7317;
+			packageReferences = (
+				F2F7D3F92A7BFCA1009308CF /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = F2BDA68C2A3714AF00DB7317 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2BDA68A2A3714AF00DB7317 /* OpenChat */,
+				F2BDA69B2A3714B000DB7317 /* OpenChatTests */,
+				F2BDA6A52A3714B000DB7317 /* OpenChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2BDA6892A3714AF00DB7317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BDA6972A3714B000DB7317 /* Preview Assets.xcassets in Resources */,
+				F2BDA6932A3714B000DB7317 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BDA69A2A3714B000DB7317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BDA6A42A3714B000DB7317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2BDA6872A3714AF00DB7317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F7D3EE2A7ABEFD009308CF /* OllamaCompletionResponse.swift in Sources */,
+				F2BDA6CD2A39EEAA00DB7317 /* TypingAnimationProgressView.swift in Sources */,
+				F2BDA6CF2A3A2AE900DB7317 /* UserInputBarView.swift in Sources */,
+				F2F7D3F02A7BCFAF009308CF /* Host.swift in Sources */,
+				F2F7D3EC2A7ABEDB009308CF /* OllamaController.swift in Sources */,
+				F2BDA6C72A39DB5500DB7317 /* UserMessageView.swift in Sources */,
+				F2BDA6BE2A39D71D00DB7317 /* DataModel.swift in Sources */,
+				F2BDA6912A3714AF00DB7317 /* ContentView.swift in Sources */,
+				F2BDA6BC2A37156700DB7317 /* ChatMessage.swift in Sources */,
+				F2BDA68F2A3714AF00DB7317 /* OpenChatApp.swift in Sources */,
+				F2BDA6C02A39D76400DB7317 /* LocalaiController.swift in Sources */,
+				F2BDA6C52A39DB4800DB7317 /* SystemMessageView.swift in Sources */,
+				F2BDA6D12A3A366D00DB7317 /* InputMessage.swift in Sources */,
+				F2F7D3F52A7BE0BD009308CF /* View.swift in Sources */,
+				F2F7D3F22A7BDCB4009308CF /* ConfigView.swift in Sources */,
+				F2BDA6CB2A39EB6400DB7317 /* CompletionResponse.swift in Sources */,
+				F2BDA6C32A39DA7F00DB7317 /* ChatStyle.swift in Sources */,
+				F2F7D3FD2A7C2A2C009308CF /* OpenaiController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BDA6982A3714B000DB7317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2BDA6A22A3714B000DB7317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2BDA69E2A3714B000DB7317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2BDA68A2A3714AF00DB7317 /* OpenChat */;
+			targetProxy = F2BDA69D2A3714B000DB7317 /* PBXContainerItemProxy */;
+		};
+		F2BDA6A82A3714B000DB7317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2BDA68A2A3714AF00DB7317 /* OpenChat */;
+			targetProxy = F2BDA6A72A3714B000DB7317 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F2BDA6AE2A3714B000DB7317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2BDA6AF2A3714B000DB7317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F2BDA6B12A3714B000DB7317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OpenChat/OpenChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OpenChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 9BJC33K565;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Open Chat";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.barnacle.OpenChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		F2BDA6B22A3714B000DB7317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OpenChat/OpenChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OpenChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 9BJC33K565;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Open Chat";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.barnacle.OpenChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+		F2BDA6B42A3714B000DB7317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BJC33K565;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.barnacle.test-import.OpenChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenChat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenChat";
+			};
+			name = Debug;
+		};
+		F2BDA6B52A3714B000DB7317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BJC33K565;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.barnacle.test-import.OpenChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenChat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenChat";
+			};
+			name = Release;
+		};
+		F2BDA6B72A3714B000DB7317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BJC33K565;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.barnacle.test-import.OpenChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenChat;
+			};
+			name = Debug;
+		};
+		F2BDA6B82A3714B000DB7317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BJC33K565;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.barnacle.test-import.OpenChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2BDA6862A3714AF00DB7317 /* Build configuration list for PBXProject "OpenChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BDA6AE2A3714B000DB7317 /* Debug */,
+				F2BDA6AF2A3714B000DB7317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2BDA6B02A3714B000DB7317 /* Build configuration list for PBXNativeTarget "OpenChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BDA6B12A3714B000DB7317 /* Debug */,
+				F2BDA6B22A3714B000DB7317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2BDA6B32A3714B000DB7317 /* Build configuration list for PBXNativeTarget "OpenChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BDA6B42A3714B000DB7317 /* Debug */,
+				F2BDA6B52A3714B000DB7317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2BDA6B62A3714B000DB7317 /* Build configuration list for PBXNativeTarget "OpenChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BDA6B72A3714B000DB7317 /* Debug */,
+				F2BDA6B82A3714B000DB7317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F2F7D3F92A7BFCA1009308CF /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F2F7D3FA2A7BFCA1009308CF /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2F7D3F92A7BFCA1009308CF /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F2BDA6832A3714AF00DB7317 /* Project object */;
+}
