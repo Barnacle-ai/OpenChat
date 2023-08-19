@@ -16,4 +16,5 @@ struct LocalaiInputMessage: Codable {
 struct OllamaInputMessage: Codable {
     var model: String
     var prompt: String
+    var context: [Int]?
 }

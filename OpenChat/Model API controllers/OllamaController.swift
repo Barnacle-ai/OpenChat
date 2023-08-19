@@ -27,6 +27,11 @@ class OllamaController: NSObject, URLSessionDataDelegate {
                     if let responseData = responseData {
                         let jsonDecoder = JSONDecoder()
                         let completionResponse = try! jsonDecoder.decode(OllamaCompletionResponse.self, from: responseData)
+                        DispatchQueue.main.async {
+                            if let context = completionResponse.context {
+                                self.dataModel.ollamaContext = context
+                            }
+                        }
                         arrayOfJsonResponse.append(completionResponse)
                     }
                 }
@@ -67,7 +72,9 @@ class OllamaController: NSObject, URLSessionDataDelegate {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         let body = OllamaInputMessage(
             model: modelName,
-            prompt: message)
+            prompt: message,
+            context: dataModel.ollamaContext
+        )
         let jsonEncoder = JSONEncoder()
         request.httpBody = try! jsonEncoder.encode(body)
 

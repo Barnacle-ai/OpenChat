@@ -10,4 +10,5 @@ import Foundation
 class DataModel: ObservableObject {
     @Published var messages: [ChatMessage] = []
     @Published var awaitingResponse = false
+    @Published var ollamaContext: [Int]?
 }
